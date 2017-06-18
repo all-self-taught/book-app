@@ -133,4 +133,16 @@ module.exports = function(app){
     }
   })
 
+  app.get('/profile', function(req, res){
+    if (req.isAuthenticated()) {
+      res.render('profile', { user: req.isAuthenticated(), username: req.user.username });
+    }
+  })
+
+  app.post('/profile', function(req, res){
+    if (req.isAuthenticated()) {
+      res.render('profile', { user: req.isAuthenticated(), username: req.user.username });
+    }
+  })
+
 }
