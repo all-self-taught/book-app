@@ -1,0 +1,21 @@
+{
+  "name": "book-app",
+  "description": "",
+  "main": "server.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0"
+  },
+  "resolutions": {
+    "bootstrap": "4.0"
+  }
+}
